@@ -326,8 +326,8 @@
 		<p>
 			${grailsApplication.config.application.title} facilitates sharing of data within a research group or consortium,
 			as the study owner can decide who can view or access the data. In addition, ${grailsApplication.config.application.title}
-			can stimulate collaborations by making study information publicly visible. New studies can be based on study
-			data within the database, as standardized storage is stimulated by the system.
+			can stimulate collaborations by making study information and data publicly visible. New studies can be based on study
+			data within the database, as standardized storage is stimulated by the system. Upon publication of the data, studies can be made publicly accessible (under <a target="_blank" href="${resource(dir:'downloads', file: 'license_terms.pdf')}">these</a> license terms).
 		</p>
 	</div>
 	<div style="margin-left:8px;width:472px;display:inline-block;float:left;zoom:1;*display:inline;">
@@ -354,8 +354,11 @@
 				or <i>metabolomics</i>.
 			</p>
 			<p>
-                <i>A quick start user guide is available for download <a href="${resource(dir:'downloads', file: 'quickstart_study_capturing.pdf')}">here</a>.<br>
-				A more in depth user guide is available for download <a href="${resource(dir:'downloads', file: 'gscf_user_guide.pdf')}">here</a>.</i>
+                <i>
+				A quick start user guide is available for download <a target="_blank" href="${resource(dir:'downloads', file: 'quickstart_study_capturing.pdf')}">here</a>.<br>
+				A more in depth user guide is available for download <a target="_blank" href="${resource(dir:'downloads', file: 'gscf_user_guide.pdf')}">here</a>.<br>
+				The license terms are available for download <a target="_blank" href="${resource(dir:'downloads', file: 'license_terms.pdf')}">here</a>.<br>
+				</i>
 			</p>
             <p>
                 <i>If you encounter a problem or have a suggestion for improvement feel free to submit an issue <g:link url="${issueUrl}">here</g:link></i>
