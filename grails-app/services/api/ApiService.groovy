@@ -254,10 +254,11 @@ class ApiService implements Serializable, ApplicationContextAware {
             // the user cannot read this data
 	        cleanUpBlock()
 	        response.sendError(401, "Unauthorized")
-        } else if (!canWriteBelongsToRelationships(item, user)) {
-            // the user cannot read this data
-	        cleanUpBlock()
-	        response.sendError(401, "Unauthorized")
+//      All current calls are read-only, reader access should be sufficient to perform those calls.
+//        } else if (!canWriteBelongsToRelationships(item, user)) {
+//            // the user cannot read this data
+//	        cleanUpBlock()
+//	        response.sendError(401, "Unauthorized")
         } else {
             // allowed api call, execute block / closure
             block()
